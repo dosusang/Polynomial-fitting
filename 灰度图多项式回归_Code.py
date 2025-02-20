@@ -30,7 +30,7 @@ X = np.vstack((x, y)).T  # 将 x 和 y 合并为特征
 y = z  # 灰度值作为目标
 
 # 将输入特征转换为多项式特征
-poly = PolynomialFeatures(degree=3)  # 你可以调整多项式的阶数
+poly = PolynomialFeatures(degree=10)  # 你可以调整多项式的阶数
 X_poly = poly.fit_transform(X)
 
 # 使用线性回归模型来拟合多项式特征
